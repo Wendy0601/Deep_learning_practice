@@ -1,0 +1,16 @@
+The dimension for each layer:
+1, The first convolution layer has the dimension: 
+[batch_size, 28,28,32]
+32*5*5=800 weight parameters, where these 32 filters share the parameters and there are  5*5=25 parameters are different
+2,  The second convolution layer has the dimension:
+[batch_size,10,10,32]
+32*5*5=800 weight parameters, where these 32 filters share the parameters and there are  5*5=25 parameters are different 
+3, The third convolution layer has the dimension:
+[batch_size, 3,3,64]
+64*3*3=576 weight paramers, where these 64 filters share the parameters and there are  3*3=9 parameters are different
+4, The output layer has the dimension:
+[batch_size,10]
+576*10=5760 weight parameters
+
+4. Evaluate the performance by classification error 
+The average classification errors for all digits is 28.94%
